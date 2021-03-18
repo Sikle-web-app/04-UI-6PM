@@ -1,0 +1,159 @@
+<!--
+    Tables
+    ======
+
+    <table></table> tag, used to create the tables.
+
+    <tr></tr> tag, used to create the table rows.
+
+    <th></th> tag, used to create the table headers.
+
+    <td></td> tag, used to display the table column content.
+
+    <thead></thead> tag, used to apply the styles to the header section.
+
+    <tbody></tbody> tag, used to apply the styles to the body of the table
+-->
+
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Tables</title> 
+    </head>
+    <body>
+        <table border="1"
+               align="center"
+               cellspacing="10px"
+               cellpadding="10px">
+            <thead>
+                <tr>
+                    <th>P_ID</th>
+                    <th>P_NAME</th>
+                    <th>P_COST</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>111</td>
+                    <td>P_ONE</td>
+                    <td>10000</td>
+                </tr>
+
+                <tr>
+                    <td>222</td>
+                    <td>P_TWO</td>
+                    <td>20000</td>
+                </tr>
+
+                <tr>
+                    <td>333</td>
+                    <td>P_THREE</td>
+                    <td>30000</td>
+                </tr>
+
+                <tr>
+                    <td>444</td>
+                    <td>P_FOUR</td>
+                    <td>40000</td>
+                </tr>
+
+                <tr>
+                    <td>555</td>
+                    <td>P_FIVE</td>
+                    <td>50000</td>
+                </tr>
+
+                <tr>
+                    <td>666</td>
+                    <td>P_SIX</td>
+                    <td>60000</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+    </head>
+    <body>
+        <table border="2"
+               align="center"
+               cellspacing="10px"
+               cellpadding="10px"
+               style="text-align: center;">
+            <thead>
+                <tr>
+                    <th colspan="2">Name & Price</th>
+                    <th colspan="2">Brand & Qty</th>
+                    <th style="width: 200px; text-align: center;">Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Shirt</td>
+                    <td rowspan="3">$100</td>
+                    <td>Niki</td>
+                    <td>10</td>
+                    <td><img src="images/p1.jpg" width="10%"></td>
+                </tr>
+
+                <tr>
+                    <td>Shirt</td>
+                   
+                    <td colspan="2">Polo & 20</td>
+                    <td><img src="images/p2.jpg" width="10%"></td>
+                </tr>
+
+                <tr>
+                    <td>Shirt</td>
+                    
+                    <td>American</td>
+                    <td>100</td>
+                    <td><img src="images/p3.jpg" width="10%"></td>
+                </tr>
+
+                <tr>
+                    <td>Pant</td>
+                    <td>$300</td>
+                    <td rowspan="2">Polo <br> Niki</td>
+                    <td>500</td>
+                    <td><img src="images/p4.jpg" width="30%"></td>
+                </tr>
+
+                <tr>
+                    <td>Pant</td>
+                    <td>$500</td>
+                    
+                    <td>200</td>
+                    <td><img src="images/p5.jpg" width="10%"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">Pant || $500 || Polo || 200</td>
+                    <td><img src="images/p6.jpg" width="10%"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
