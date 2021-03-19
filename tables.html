@@ -76,74 +76,189 @@
 </html>
 -->
 
+
+
+<!--
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Tables</title>
+        </head>
+        <body>
+            <table border="2"
+                align="center"
+                cellspacing="10px"
+                cellpadding="10px"
+                style="text-align: center;">
+                <thead>
+                    <tr>
+                        <th colspan="2">Name & Price</th>
+                        <th colspan="2">Brand & Qty</th>
+                        <th style="width: 200px; text-align: center;">Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Shirt</td>
+                        <td rowspan="3">$100</td>
+                        <td>Niki</td>
+                        <td>10</td>
+                        <td><img src="images/p1.jpg" width="10%"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Shirt</td>
+                    
+                        <td colspan="2">Polo & 20</td>
+                        <td><img src="images/p2.jpg" width="10%"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Shirt</td>
+                        
+                        <td>American</td>
+                        <td>100</td>
+                        <td><img src="images/p3.jpg" width="10%"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Pant</td>
+                        <td>$300</td>
+                        <td rowspan="2">Polo <br> Niki</td>
+                        <td>500</td>
+                        <td><img src="images/p4.jpg" width="30%"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Pant</td>
+                        <td>$500</td>
+                        
+                        <td>200</td>
+                        <td><img src="images/p5.jpg" width="10%"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="4">Pant || $500 || Polo || 200</td>
+                        <td><img src="images/p6.jpg" width="10%"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+    </html>
+-->
+
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tables</title>
+        <title>Tables With CSS</title>
+        <style>
+            body{
+                background: linear-gradient(90deg,red,yellow);
+                color: white;
+            }
+            table,th,td{
+                border: 2px solid whitesmoke;
+            }
+            table{
+                width: 100%;
+                text-align: center;
+                border-collapse: collapse;
+            }
+            th{
+                height: 50px;
+                vertical-align: bottom;
+            }
+            img{
+                margin: 10px;
+                border-radius: 20px;
+                border: 2px solid red;
+            }
+            tr:nth-child(even){
+                background-color: brown;
+            }
+            tr:hover{
+                background: linear-gradient(45deg,black,white,black);
+            }
+        </style>
     </head>
     <body>
-        <table border="2"
-               align="center"
-               cellspacing="10px"
-               cellpadding="10px"
-               style="text-align: center;">
+        <table>
             <thead>
                 <tr>
-                    <th colspan="2">Name & Price</th>
-                    <th colspan="2">Brand & Qty</th>
-                    <th style="width: 200px; text-align: center;">Image</th>
+                    <th>SNO</th>
+                    <th>Name</th>
+                    <th>Brand</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Reviews</th>
+                    <th>Image</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
+                    <td>1</td>
                     <td>Shirt</td>
-                    <td rowspan="3">$100</td>
                     <td>Niki</td>
-                    <td>10</td>
-                    <td><img src="images/p1.jpg" width="10%"></td>
-                </tr>
-
-                <tr>
-                    <td>Shirt</td>
-                   
-                    <td colspan="2">Polo & 20</td>
-                    <td><img src="images/p2.jpg" width="10%"></td>
-                </tr>
-
-                <tr>
-                    <td>Shirt</td>
-                    
-                    <td>American</td>
+                    <td>$10</td>
                     <td>100</td>
-                    <td><img src="images/p3.jpg" width="10%"></td>
+                    <td>5</td>
+                    <td><img width="100px" src="images/p1.jpg"></td>
                 </tr>
 
                 <tr>
+                    <td>2</td>
+                    <td>Shirt</td>
+                    <td>Polo</td>
+                    <td>$15</td>
+                    <td>50</td>
+                    <td>10</td>
+                    <td><img width="100px" src="images/p2.jpg"></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Shirt</td>
+                    <td>American</td>
+                    <td>$20</td>
+                    <td>40</td>
+                    <td>50</td>
+                    <td><img width="100px" src="images/p3.jpg"></td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
                     <td>Pant</td>
-                    <td>$300</td>
-                    <td rowspan="2">Polo <br> Niki</td>
-                    <td>500</td>
-                    <td><img src="images/p4.jpg" width="30%"></td>
+                    <td>Polo</td>
+                    <td>$20</td>
+                    <td>40</td>
+                    <td>50</td>
+                    <td><img width="100px" src="images/p4.jpg"></td>
                 </tr>
 
                 <tr>
+                    <td>5</td>
                     <td>Pant</td>
-                    <td>$500</td>
-                    
-                    <td>200</td>
-                    <td><img src="images/p5.jpg" width="10%"></td>
+                    <td>American</td>
+                    <td>$20</td>
+                    <td>40</td>
+                    <td>50</td>
+                    <td><img width="100px" src="images/p5.jpg"></td>
                 </tr>
 
                 <tr>
-                    <td colspan="4">Pant || $500 || Polo || 200</td>
-                    <td><img src="images/p6.jpg" width="10%"></td>
+                    <td>6</td>
+                    <td>Pant</td>
+                    <td>American</td>
+                    <td>$20</td>
+                    <td>40</td>
+                    <td>50</td>
+                    <td><img width="100px" src="images/p6.jpg"></td>
                 </tr>
             </tbody>
         </table>
     </body>
 </html>
-
-
 
 
 
